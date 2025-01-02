@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import CommentSection from '@/components/CommentSection';
 import AuthorCard from '@/components/AuthorCard';
 import Footer from '@/components/Footer';
@@ -20,7 +21,7 @@ const posts = [
   {
     id: "3",
     title: "JavaScript: The Dynamic Web",
-    description: "Explore JavaScripts Role in Adding Interactivity and Functionality to Websites: \nJavaScript is the powerhouse behind dynamic and interactive web experiences. It transforms static web pages into engaging platforms by enabling features like animations, real-time updates, form validations, and interactive content. As the essential scripting language of the web, JavaScript works seamlessly with HTML and CSS to enhance user engagement and functionality.By mastering JavaScript, you gain the ability to create responsive interfaces, build complex web applications, and integrate APIs for dynamic data fetching. From developing simple interactions like dropdown menus to crafting advanced frameworks like React or Vue, JavaScript is the foundation for modern web development.",
+    description: "Explore JavaScripts Role in Adding Interactivity and Functionality to Websites: \nJavaScript is the powerhouse behind dynamic and interactive web experiences. It transforms static web pages into engaging platforms by enabling features like animations, real-time updates, form validations, and interactive content. As the essential scripting language of the web, JavaScript works seamlessly with HTML and CSS to enhance user engagement and functionality.By mastering JavaScript, you gain the ability to create responsive interfaces, build complex web applications, and integrate APIs for dynamic data fetching. From developing simple interactions like dropdown menus to crafting advanced frameworks like React or Vue, JavaScript is the foundation for modern web development. ",
     image: "/images/javascript.jpg",
   },
   {
@@ -68,9 +69,11 @@ export default function Post({ params }: { params: { id: string } }) {
       </h1>
 
       {post.image && (
-        <img
+        <Image
           src={post.image}
           alt={post.title}
+          width={500} 
+          height={250}
           className='w-full h-auto rounded-md mt-4'
         />
       )}
