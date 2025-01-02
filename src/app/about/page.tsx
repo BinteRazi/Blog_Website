@@ -19,10 +19,10 @@ const AboutPage = () => {
               About Us
             </h1>
             <p className="text-base lg:text-lg leading-relaxed text-gray-800 bg-gray-50 shadow-lg p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
-              Welcome to my blog! I’m a forward-thinking web developer with a knack for creating visually captivating, interactive, and highly functional
+              Welcome to my blog! I am a forward-thinking web developer with a knack for creating visually captivating, interactive, and highly functional
               web experiences. Leveraging powerful technologies like React, Next.js, TypeScript, and Tailwind CSS, I transform bold ideas into reality.
               My work blends creativity and precision to craft seamless digital experiences that not only engage but leave a lasting impression. Whether
-              it’s tackling complex challenges or designing elegant solutions, I’m dedicated to sharing my journey, insights, and expertise with you
+              it is tackling complex challenges or designing elegant solutions, I am dedicated to sharing my journey, insights, and expertise with you
               through this platform.
             </p>
           </div>

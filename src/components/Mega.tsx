@@ -42,7 +42,7 @@ export default function Mega() {
     {
       id: "6",
       title: "Exploring TypeScript: Strongly Typed JavaScript",
-      description: "A beginner’s guide to TypeScript and its advantages for large-scale applications.",
+      description: "A beginners guide to TypeScript and its advantages for large-scale applications.",
       date: "2024-12-26",
       imageUrl: "/images/typescript.jpg",
     },

@@ -7,7 +7,7 @@ export default function Feature() {
         <h2
           className='text-center text-3xl font-bold md:text-5xl lg:text-center animate-fade-in-up transition-all duration-500 ease-in-out transform hover:translate-y-[-5px] hover:text-blue-800 text-purple-950'
         >
-          Decoding the Digital Revolution: Unlocking Technology's Potential
+          Decoding the Digital Revolution: Unlocking Technologys Potential
           <br /> By Nimra Razi | Tech Insights Nexus
         </h2>
 
@@ -39,7 +39,7 @@ export default function Feature() {
           </div>
         </div>
         <p className='text-sm md:text-base text-black mb-6 px-4 animate-fade-in-down delay-100 mt-10'>
-          Explore our diverse categories and dive into the world of innovation! From the latest breakthroughs in Technology and Artificial Intelligence to mastering HTML, Next.js, and cutting-edge Web Development techniques. Step into the immersive realm of Virtual Reality and discover how these topics shape the future. There's something for everyone to learn and grow.
+          Explore our diverse categories and dive into the world of innovation! From the latest breakthroughs in Technology and Artificial Intelligence to mastering HTML, Next.js, and cutting-edge Web Development techniques. Step into the immersive realm of Virtual Reality and discover how these topics shape the future. There is something for everyone to learn and grow.
         </p>
       </section>
     </div>
