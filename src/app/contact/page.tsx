@@ -8,7 +8,7 @@ const ContactForm = () => {
           <h1 className="text-center text-3xl font-bold md:text-5xl lg:text-center animate-fade-in-up transition-all duration-500 ease-in-out transform hover:translate-y-[-5px] hover:text-blue-500 text-purple-900"
           >Contact Us</h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Connecting with you is our priority. Send us a message, and we will be in touch shortly!"
+          Connecting with you is our priority. Send us a message, and we will be in touch shortly!
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
