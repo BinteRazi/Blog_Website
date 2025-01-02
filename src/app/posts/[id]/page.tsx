@@ -4,12 +4,7 @@ import CommentSection from '@/components/CommentSection';
 import AuthorCard from '@/components/AuthorCard';
 import Footer from '@/components/Footer';
 
-interface PostProps {
-  params: {
-    id: string;
-  };
-}
-
+//  Posts data
 const posts = [
   {
     id: "1",
@@ -49,16 +44,32 @@ const posts = [
   },
 ];
 
+// Define the params type
+interface PostProps {
+  params: {
+    id: string;
+  };
+}
+
+// Function to generate static parameters
+export function generateStaticParams() {
+  return posts.map((post) => ({
+    id: post.id,
+  }));
+}
+
+// Post Component
 export default function Post({ params }: PostProps) {
   const { id } = params;
   const post = posts.find((p) => p.id === id);
 
   if (!post) {
     return (
-      <h2 className="text-2xl font-bold text-center mt-10 ">Post Not Found</h2>
+      <h2 className="text-2xl font-bold text-center mt-10">Post Not Found</h2>
     );
   }
 
+  // Helper function to render paragraphs
   const renderParagraphs = (description: string) => {
     return description.split("\n").map((para, index) => (
       <p key={index} className="mt-4 text-justify">
