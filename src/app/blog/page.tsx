@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
   {
     id: '3',
     title: 'JavaScript: The Dynamic Web',
-    description: 'Explore JavaScript\'s role in adding interactivity to websites.',
+    description: 'Explore JavaScripts role in adding interactivity to websites.',
     image: '/images/javascript.jpg',
   },
   {
@@ -47,7 +47,7 @@ const blogPosts: BlogPost[] = [
   {
     id: '6',
     title: 'Exploring TypeScript: Strongly Typed JavaScript',
-    description: 'A beginner’s guide to TypeScript and its advantages for large-scale applications.',
+    description: 'A beginners guide to TypeScript and its advantages for large-scale applications.',
     image: '/images/typescript.jpg',
   },
 ];
