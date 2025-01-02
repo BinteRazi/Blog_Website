@@ -51,7 +51,7 @@ interface PostProps {
   };
 }
 
-// Function to generate static parameters
+// Generate static parameters for dynamic routes
 export function generateStaticParams() {
   return posts.map((post) => ({
     id: post.id,
