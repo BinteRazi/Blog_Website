@@ -16,7 +16,7 @@ interface CommentSectionProps {
   postId: string;
 }
 
-export default function CommentSection({ postId }: CommentSectionProps) {
+export default function CommentSection({ }: CommentSectionProps) {
   const [comments, setComments] = useState<Comment[]>([]);
   const [form, setForm] = useState({ author: '', text: '' });
   const [editingCommentId, setEditingCommentId] = useState<string | null>(null);
