@@ -4,6 +4,11 @@ import CommentSection from '@/components/CommentSection';
 import AuthorCard from '@/components/AuthorCard';
 import Footer from '@/components/Footer';
 
+interface PostProps {
+  params: {
+    id: string;
+  };
+}
 
 const posts = [
   {
@@ -44,27 +49,27 @@ const posts = [
   },
 ];
 
-export default function Post({ params }: { params: { id: string } }) {
+export default function Post({ params }: PostProps) {
   const { id } = params;
   const post = posts.find((p) => p.id === id);
 
   if (!post) {
     return (
-      <h2 className='text-2xl font-bold text-center mt-10'>Post Not Found</h2>
+      <h2 className="text-2xl font-bold text-center mt-10 ">Post Not Found</h2>
     );
   }
 
   const renderParagraphs = (description: string) => {
     return description.split("\n").map((para, index) => (
-      <p key={index} className='mt-4 text-justify'>
+      <p key={index} className="mt-4 text-justify">
         {para.trim()}
       </p>
     ));
   };
 
   return (
-    <div className='max-w-3xl mx-auto p-5'>
-      <h1 className='md:text-4xl text-3xl font-bold text-purple-600 text-center'>
+    <div className="max-w-3xl mx-auto p-5 bg-purple-200">
+      <h1 className="md:text-4xl text-3xl font-bold text-purple-600 text-center">
         {post.title}
       </h1>
 
@@ -72,13 +77,13 @@ export default function Post({ params }: { params: { id: string } }) {
         <Image
           src={post.image}
           alt={post.title}
-          width={500} 
+          width={500}
           height={250}
-          className='w-full h-auto rounded-md mt-4'
+          className="w-full h-auto rounded-md mt-4"
         />
       )}
 
-      <div className='mt-6 text-lg text-slate-700'>
+      <div className="mt-6 text-lg text-slate-700">
         {renderParagraphs(post.description)}
       </div>
 
@@ -88,4 +93,3 @@ export default function Post({ params }: { params: { id: string } }) {
     </div>
   );
 }
-
